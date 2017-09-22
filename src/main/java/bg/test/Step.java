@@ -3,10 +3,10 @@ package bg.test;
 /**
  * 
  *
- * @param <T> The type of the object supporting the action 
- * @param <U> The target of the action
+ * @param <S> The type of the object supporting the action 
+ * @param <T> The target of the action
  */
-public interface Step<T, U> {
+public interface Step<S, T> {
 	
-	U runStep(TaskImpl<T, U> task);
+	T runStep(TaskImpl<S, T> task);
 }
